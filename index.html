@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Previna-se | Guia de Segurança Cidadã</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="container">
+            <small>Portal Previna-se</small>
+            <h1>Alerta Mossoró Seguro</h1>
+            <p>Informação clara para prevenção e acesso aos canais oficiais.</p>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <div class="container">
+            <button onclick="abrirAba('inicio')" id="btn-inicio" class="active">Início</button>
+            <button onclick="abrirAba('prevencao')" id="btn-prevencao">Prevenção</button>
+            <button onclick="abrirAba('comoagir')" id="btn-comoagir">Como agir</button>
+            <button onclick="abrirAba('contatos')" id="btn-contatos">Contatos</button>
+            <button onclick="abrirAba('sobre')" id="btn-sobre">Sobre</button>
+        </div>
+    </nav>
+
+    <main class="conteudo">
+        <div class="container grid">
+            <div>
+
+                <!-- ABA 1 - INÍCIO -->
+                <div id="aba-inicio" class="aba ativa">
+                    <span class="label-verde">INFORMAÇÃO TAMBÉM PROTEGE</span>
+                    <h2>Orientações simples para situações do cotidiano em Mossoró</h2>
+                    <p style="margin-bottom:24px">Este portal não recebe denúncias. Aqui você aprende a se prevenir e
+                        descobre para qual número oficial ligar em cada situação. Informação organizada da SENASP,
+                        Bombeiros RN e Defesa Civil.</p>
+
+                    <!-- 1. BOTÕES RÁPIDOS - O QUE A PESSOA MAIS PROCURA -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px">
+                        <button onclick="abrirAba('comoagir')"
+                            style="background:#0f2f4d;color:#f1da08;padding:14px;border-radius:8px;border:none;font-weight:700;cursor:pointer">🔴
+                            FUI ASSALTADO, E AGORA?</button>
+                        <button onclick="abrirAba('comoagir')"
+                            style="background:#fff;border:2px solid #0f2f4d;color:#0f2f4d;padding:14px;border-radius:8px;font-weight:700;cursor:pointer">📱
+                            CLONARAM MEU WHATS</button>
+                    </div>
+
+                    <!-- 2. 3 PILARES VISUAIS -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:22px">
+                        <div class="card-lista" style="text-align:center"><b
+                                style="font-size:28px">🛡️</b><br><b>Prevenir</b>
+                            <p style="font-size:12px">Cuidados de casa, rua e internet</p>
+                        </div>
+                        <div class="card-lista" style="text-align:center"><b style="font-size:28px">⚡</b><br><b>Agir</b>
+                            <p style="font-size:12px">O que fazer nos primeiros 30s</p>
+                        </div>
+                        <div class="card-lista" style="text-align:center"><b
+                                style="font-size:28px">📞</b><br><b>Ligar</b>
+                            <p style="font-size:12px">Número certo pra cada caso</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. BLOCO DE CONFIANÇA - PRA MOSTRAR QUE É SÉRIO -->
+                    <div class="card-lista" style="background:#e6f0ed;border:1px solid #b8d4c8">
+                        <b>✅ Como este portal funciona?</b>
+                        <p>1. Não coletamos seu CPF, nome ou localização<br>
+                            2. Não somos polícia, não recebemos denúncia<br>
+                            3. Todo conteúdo tem fonte oficial (SENASP, Governo RN)<br>
+                            4. Atualizado em Setembro/2026 para Mossoró</p>
+                    </div>
+
+                    <!-- 4. DADO LOCAL QUE PRENDE A PESSOA -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+                        <div class="card-lista" style="border-left:4px solid #c00"><b>⏰ Alerta Mossoró</b>
+                            <p>Horário com mais ocorrências: 18h às 21h. Evite sacar dinheiro ou usar celular na rua
+                                nesse período no Centro e Vuco-Vuco.</p>
+                        </div>
+                        <div class="card-lista" style="border-left:4px solid #0018f0"><b>📍 Seu bairro</b>
+                            <p>Ilha, Abolição e Centro concentram 60% dos golpes de WhatsApp. Ative a verificação em
+                                duas etapas hoje.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. CHAMADA FINAL -->
+                    <div
+                        style="background:#0f2f4d;color:#fff;padding:18px;border-radius:10px;margin-top:16px;text-align:center">
+                        <b style="color:#f0ec06">Comece por aqui:</b>
+                        <p style="color:#fff;margin:6px 0">Não sabe o que fazer? Vá em "Como agir" e clique no seu caso.
+                        </p>
+                        <button onclick="abrirAba('comoagir')"
+                            style="background:#fff;color:#0f2f4d;padding:10px 18px;border-radius:20px;border:none;font-weight:800;margin-top:6px;cursor:pointer">VER
+                            GUIA "COMO AGIR" →</button>
+                    </div>
+                </div>
+
+                <div id="aba-prevencao" class="aba">
+                    <span class="label-verde">PREVENÇÃO</span>
+                    <h2>Cuidados que diminuem riscos em Mossoró</h2>
+                    <p style="margin-bottom:20px">Prevenção não é medo. É rotina. 2 minutos hoje evitam 2 horas na
+                        delegacia.</p>
+
+                    <!-- CARD 1 -->
+                    <div class="card-lista">
+                        <b>🏠 Casa Segura - 3 travas que 90% esquece</b>
+                        <p>1. Portão sempre trancado, mesmo de dia 2. Não deixe chave por fora da fechadura 3. Grupo de
+                            vizinhos no WhatsApp com 5 casas</p>
+                        <p style="margin-top:8px"><span
+                                style="background:#ffe9e9;color:#c00;padding:2px 6px;border-radius:4px;font-size:11px">ERRO
+                                COMUM:</span> Postar que viajou para Tibau nos stories com localização.</p>
+                        <small style="display:block;margin-top:8px;opacity:.7">✅ Checklist 10s: portão, janelas, luz
+                            acesa?</small>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="card-lista">
+                        <b>📱 Golpe do Pix / WhatsApp - Cresceu 23% no RN</b>
+                        <p>1. Banco NUNCA pede senha por link 2. Passe o dedo em cima do link sem clicar - veja se é
+                            .gov.br de verdade 3. Ative verificação em 2 etapas no WhatsApp agora</p>
+                        <p style="margin-top:8px"><span
+                                style="background:#ffe9e9;color:#c00;padding:2px 6px;border-radius:4px;font-size:11px">ERRO
+                                COMUM:</span> Clicar em SMS dos Correios "sua encomenda está retida".</p>
+                        <small style="display:block;margin-top:8px;opacity:.7">✅ Faça agora: Whats > Config > Conta >
+                            Confirmação em duas etapas</small>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="card-lista">
+                        <b>🚗 Rua Segura - Horário de risco: 18h às 21h</b>
+                        <p>1. Não conte dinheiro na rua, principalmente Centro e Vuco-Vuco 2. Antes de sacar, olhe quem
+                            está atrás 3. Bolsa no porta-malas, nunca no banco</p>
+                        <p style="margin-top:8px"><span
+                                style="background:#fff3cd;padding:2px 6px;border-radius:4px;font-size:11px">DADO
+                                LOCAL:</span> 70% dos furtos de moto em Mossoró são sem trava de guidão.</p>
+                    </div>
+
+                    <!-- NOVOS CARDS QUE VOCÊ NÃO TEM E PRECISA TER -->
+                    <div class="card-lista" style="border-left:4px solid #2f8a7a">
+                        <b>👩‍👧‍👦 Mulher e Família Segura</b>
+                        <p>Salve na agenda: DEAM Mossoró (84) 3422-8243 / Whats (84) 98125-6954 e 180. Se ouvir gritos
+                            na vizinhança, ligue 190 - denúncia pode ser anônima.</p>
+                    </div>
+
+                    <div class="card-lista" style="border-left:4px solid #2f8a7a">
+                        <b>🏍️ Moto e Carro Seguro</b>
+                        <p>Trava de guidão + corta corrente. Nunca deixe capacete na moto. Estacione sempre em local com
+                            câmera. Tempo médio de furto: 40 segundos sem trava.</p>
+                    </div>
+
+                    <div class="card-lista" style="border-left:4px solid #2f8a7a">
+                        <b>🧒 Criança e Idoso Seguro - Disque 100</b>
+                        <p>Combine palavra-senha com seus filhos para caronas. Para idosos: nunca assine nada com visita
+                            de "banco" ou "INSS" sem um filho por perto.</p>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px">
+                        <div class="card-lista" style="background:#0f2f4d;color:#fff"><b style="color:#8ec2b8">🔢 Número
+                                de ouro</b>
+                            <p style="color:#fcfbfb">181 - Disque Denúncia RN. 100% anônimo. Você não precisa se
+                                identificar.</p>
+                        </div>
+                        <div class="card-lista" style="background:#0f2f4d;color:#fff"><b style="color:#8ec2b8">📍
+                                Mossoró</b>
+                            <p style="color:#fff">Defesa Civil: (84) 3315-5000 - alagamento na Ilha, Barrinha e Centro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aba-comoagir" class="aba">
+                    <span class="label-verde">COMO AGIR</span>
+                    <h2>O que fazer agora? Protocolo de 30 segundos</h2>
+                    <p style="margin-bottom:20px">Clique no seu caso. Siga a ordem. Não pule etapas.</p>
+
+                    <div class="card-lista" onclick="this.classList.toggle('aberto')" style="cursor:pointer">
+                        <b> FUI ASSALTADO / ARRASTÃO <span style="float:right">▼</span></b>
+                        <div class="conteudo-extra">
+                            <p><strong>AGORA (0-30s):</strong> 1. Não reaja, não encare 2. Entregue e memorize: altura,
+                                tatuagem, camisa 3. Saia e vá para comércio com gente</p>
+                            <p><strong style="color:#c00">NÃO FAÇA:</strong> Correr atrás, reagir se estiver armado.</p>
+                            <p><strong>DEPOIS:</strong> Ligue 190 com local e direção da fuga. Faça BO na Delegacia
+                                Virtual com IMEI do celular (disca *#06#).</p>
+                            <a href="tel:190" class="btn-ligar" style="margin-top:10px;display:inline-block">LIGAR
+                                190</a>
+                        </div>
+                    </div>
+
+                    <div class="card-lista" onclick="this.classList.toggle('aberto')" style="cursor:pointer">
+                        <b> CLONARAM MEU WHATS / GOLPE PIX <span style="float:right">▼</span></b>
+                        <div class="conteudo-extra">
+                            <p><strong>AGORA:</strong> 1. Avise 3 contatos e família no Instagram 2. Tente recuperar:
+                                Whats > Config > Digite seu número > Código SMS 3. Ative verificação em 2 etapas</p>
+                            <p><strong>DEPOIS:</strong> Print de tudo + BO online em "Estelionato". Avise seu banco e
+                                conteste o PIX em até 24h.</p>
+                            <a href="https://delegaciavirtual.sinesp.gov.br" target="_blank" class="btn-ligar yellow"
+                                style="margin-top:10px;display:inline-block">FAZER BO ONLINE</a>
+                        </div>
+                    </div>
+
+                    <div class="card-lista" onclick="this.classList.toggle('aberto')" style="cursor:pointer">
+                        <b> INCÊNDIO / VAZAMENTO DE GÁS <span style="float:right">▼</span></b>
+                        <div class="conteudo-extra">
+                            <p><strong>AGORA:</strong> 1. Saia rastejando (fumaça mata primeiro) 2. Não use elevador 3.
+                                Feche a porta do cômodo em chamas se puder 4. Ligue 193 de fora</p>
+                            <p><strong style="color:#c00">NÃO FAÇA:</strong> Jogar água em óleo quente ou em energia
+                                elétrica.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-lista" onclick="this.classList.toggle('aberto')" style="cursor:pointer">
+                        <b> VIOLÊNCIA DOMÉSTICA / OUVI GRITOS <span style="float:right">▼</span></b>
+                        <div class="conteudo-extra">
+                            <p><strong>AGORA:</strong> 1. Se for você: vá para cômodo com saída, ligue 180 ou 190 2. Se
+                                for vizinho: ligue 190 e 180 (pode ser anônimo)</p>
+                            <p><strong>DEPOIS:</strong> DEAM Mossoró: (84) 3422-8243. Salve provas. Medida protetiva sai
+                                em 48h.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <style>
+                    .conteudo-extra {
+                        display: none;
+                        margin-top: 12px;
+                        padding-top: 12px;
+                        border-top: 1px solid #3f3d3d;
+                        line-height: 1.6;
+                        font-size: 13px
+                    }
+
+                    .card-lista.aberto .conteudo-extra {
+                        display: block
+                    }
+
+                    .card-lista.aberto {
+                        border-color: #0f2f4d;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, .08)
+                    }
+                </style>
+
+
+                <!-- ABA 4 - CONTATOS -->
+                <div id="aba-contatos" class="aba">
+                    <span class="label-verde">CONTATOS OFICIAIS</span>
+                    <h2>Quando usar cada serviço</h2>
+                    <div class="card-lista"><b>190 - PM:</b> Roubo em andamento, pessoa suspeita<br><a
+                            href="tel:190">Ligar 190</a></div>
+                    <div class="card-lista"><b>193 - Bombeiros:</b> Incêndio, animal peçonhento, resgate<br><a
+                            href="tel:193">Ligar 193</a></div>
+                    <div class="card-lista"><b>192 - SAMU:</b> Emergência médica<br><a href="tel:192">Ligar 192</a>
+                    </div>
+                    <div class="card-lista"><b>191 - PRF:</b> Acidente ou crime na BR<br><a href="tel:192">Ligar 191</a>
+                    </div>
+                    <div class="card-lista"><b>197 - Policia Civil:</b> Golpe, estelionato, precisa investigar<br><a
+                            href="tel:192">Ligar 197</a></div>
+                    <div class="card-lista"><b>100 - Direitos Humanos:</b> idoso ou criança em risc<br><a
+                            href="tel:192">Ligar 100</a></div>
+                    <div class="card-lista"><b>181 - Disque Denúncia RN:</b> denúncia anônima (não precisa se
+                        identificar)<br><a href="tel:192">Ligar 181</a></div>
+                    <div class="card-lista"><b>(84) 3315-5000 - Defesa Civil Mossoró:</b> alagamento, risco de
+                        desabamento<br><a href="tel:192">Ligar 181</a></div>
+                    <div class="card-lista"><b>Delegacia Virtual RN:</b> Fazer BO sem sair de casa<br><a
+                            href="https://delegaciavirtual.sinesp.gov.br"
+                            target="_blank">delegaciavirtual.sinesp.gov.br</a></div>
+                </div>
+
+                <!-- ABA 5 - SOBRE -->
+                <div id="aba-sobre" class="aba">
+                    <span class="label-verde">SOBRE O PROJETO</span>
+                    <h2>Portal educativo, não oficial</h2>
+                    <p style="margin-bottom:20px"> Informação e Segurança. Nosso objetivo é organizar
+                        em linguagem simples o que fazer antes, durante e depois de uma situação de risco em Mossoró.
+                        <b>Não recebemos denúncias e não substituímos o 190/193/192.</b>
+                    </p>
+
+                    <div class="card-lista" style="border-left:4px solid #001757">
+                        <b>🎯 Objetivo do portal</b>
+                        <p>1. Diminuir golpes com prevenção 2. Ensinar protocolo de 30 segundos quando algo acontece 3.
+                            Direcionar para o número oficial correto, sem perder tempo.</p>
+                    </div>
+
+                    <div class="card-lista">
+                        <b>📚 De onde vem a informação?</b>
+                        <p>
+                            • SENASP / MJ - Manual de Prevenção Cidadã<br>
+                            • Corpo de Bombeiros RN - Cartilha de Incêndio e Gás<br>
+                            • Defesa Civil Mossoró (84) 3315-5000<br>
+                            • DEAM Mossoró e Lei Maria da Penha<br>
+                            • Anuário Brasileiro de Segurança Pública 2024
+                        </p>
+                        <small style="opacity:.7">Última atualização: Setembro/2026 - Mossoró/RN</small>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                        <div class="card-lista" style="background:#e6f0ed">
+                            <b>🔒 O que NÃO fazemos</b>
+                            <p style="font-size:13px">Não coletamos CPF, nome, localização ou foto. Não temos formulário
+                                de denúncia. Não guardamos nada no servidor. É só leitura.</p>
+                        </div>
+                        <div class="card-lista" style="background:#fff8d6">
+                            <b>⚠️ Limitações</b>
+                            <p style="font-size:13px">Este site não substitui treinamento oficial. Em caso de dúvida ou
+                                emergência real, ligue sempre 190/193/192. Conteúdo educativo.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        style="background:#001757;color:#fff;padding:16px;border-radius:10px;margin-top:14px;text-align:center">
+                        <b style="color:#f8d404">Transparência total</b>
+                        <p style="color:#fff;font-size:13px;margin-top:4px">Todo o código é aberto, sem rastreadores. Se
+                            encontrar um número desatualizado, avise pelo e-mail do projeto.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOX LATERAL FIXO -->
+            <aside class="box-emergencia">
+                <h3>Em uma emergência</h3>
+                <p>Afastese do risco e procure o serviço oficial adequado.</p>
+                <ul>
+                    <li><strong>Polícia Militar: 190</strong></li>
+                    <li><strong>Bombeiros: 193</strong></li>
+                    <li><strong>SAMU: 192</strong></li>
+                    <li><strong>Mulher: 180</strong></li>
+                </ul>
+                <a href="tel:190" class="btn-ligar">LIGAR 190 AGORA</a>
+            </aside>
+
+        </div>
+    </main>
+
+    <script>
+        function abrirAba(nome) {
+            // esconde todas as abas
+            document.querySelectorAll('.aba').forEach(a => a.classList.remove('ativa'));
+            // tira o ativo de todos os botões
+            document.querySelectorAll('.menu button').forEach(b => b.classList.remove('active'));
+            // mostra só a aba clicada
+            document.getElementById('aba-' + nome).classList.add('ativa');
+            document.getElementById('btn-' + nome).classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>

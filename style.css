@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif
+}
+
+body {
+    background: #f5f7f9;
+    color: #1a2a3a
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px
+}
+
+.topo {
+    background: #001757;
+    color: #ffffff;
+    padding: 38px 0 30px
+}
+
+.topo small {
+    color: #e7eb0a;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px
+}
+
+.topo h1 {
+    font-size: 42px;
+    font-weight: 800
+}
+
+.topo p {
+    font-size: 14px;
+    opacity: .85;
+    margin-top: 8px;
+    color: #ffffff
+}
+
+/* MENU COM ABA ATIVA */
+.menu {
+    background: #f8d404;
+    border-bottom: 1px solid #e5c200;
+    position: sticky;
+    top: 0;
+    z-index: 50
+}
+
+.menu .container {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto
+}
+
+.menu button {
+    background: none;
+    border: none;
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #001757;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap
+}
+
+.menu button.active {
+    color: #001757;
+    border-bottom: 3px solid #001757
+}
+
+.conteudo {
+    padding: 45px 0
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 50px
+}
+
+@media(max-width:800px) {
+    .grid {
+        grid-template-columns: 1fr
+    }
+}
+
+.label-verde {
+    color: #0012b6;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 12px
+}
+
+h2 {
+    color: #012a49;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 16px
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2c3e50
+}
+
+.box-emergencia {
+    background: #fff;
+    border-left: 4px solid #0c1adb;
+    border-radius: 8px;
+    padding: 22px 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08)
+}
+
+.box-emergencia h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #dd1709
+}
+
+.box-emergencia ul {
+    list-style: none;
+    margin: 12px 0 18px
+}
+
+.box-emergencia li {
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #1a2a3a
+}
+
+.btn-ligar {
+    display: block;
+    background: #ee0b03;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700
+}
+
+/* ABAS */
+.aba {
+    display: none
+}
+
+.aba.ativa {
+    display: block;
+    animation: fade .3s
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(6px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.card-lista {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 12px
+}
+
+.card-lista b {
+    color: #012a49
+}
+
+.card-lista p {
+    color: #2c3e50
+}
+
+/* CONTEÚDO QUE ABRE */
+.conteudo-extra {
+    display: none;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+    line-height: 1.6;
+    font-size: 13px
+}
+.card-lista.aberto .conteudo-extra {
+    display: block
+}
+.card-lista.aberto {
+    border-color: #001757;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08)
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    background: #fff;
+    margin-top: 40px;
+    border-top: 1px solid #eee
+}
